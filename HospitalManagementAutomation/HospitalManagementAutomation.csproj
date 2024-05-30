@@ -52,6 +52,12 @@
     <Compile Include="FormBilgiDuzenle.Designer.cs">
       <DependentUpon>FormBilgiDuzenle.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoktorDetay.Designer.cs">
+      <DependentUpon>FormDoktorDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDoktorGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBilgiDuzenle.resx">
       <DependentUpon>FormBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoktorDetay.resx">
+      <DependentUpon>FormDoktorDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDoktorGiris.resx">
       <DependentUpon>FormDoktorGiris.cs</DependentUpon>
