@@ -31,20 +31,22 @@ namespace HospitalManagementAutomation
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbBrans = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.cmbDoktor = new System.Windows.Forms.ComboBox();
+            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRandevuAl = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -55,8 +57,9 @@ namespace HospitalManagementAutomation
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lblTC);
+            this.groupBox1.Controls.Add(this.lblAdSoyad);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(15, 16);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -78,16 +81,16 @@ namespace HospitalManagementAutomation
             this.label1.TabIndex = 0;
             this.label1.Text = "TC NO:";
             // 
-            // label2
+            // lblTC
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(116, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "00000000000";
+            this.lblTC.AutoSize = true;
+            this.lblTC.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTC.ForeColor = System.Drawing.Color.Black;
+            this.lblTC.Location = new System.Drawing.Point(116, 55);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(120, 24);
+            this.lblTC.TabIndex = 0;
+            this.lblTC.Text = "00000000000";
             // 
             // label3
             // 
@@ -100,25 +103,26 @@ namespace HospitalManagementAutomation
             this.label3.TabIndex = 0;
             this.label3.Text = "Branş:";
             // 
-            // label4
+            // lblAdSoyad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(116, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 24);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Null Null";
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAdSoyad.ForeColor = System.Drawing.Color.Black;
+            this.lblAdSoyad.Location = new System.Drawing.Point(116, 89);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(82, 24);
+            this.lblAdSoyad.TabIndex = 0;
+            this.lblAdSoyad.Text = "Null Null";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.lnkBilgiDuzenle);
+            this.groupBox2.Controls.Add(this.btnRandevuAl);
+            this.groupBox2.Controls.Add(this.rchSikayet);
+            this.groupBox2.Controls.Add(this.cmbDoktor);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbBrans);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(15, 217);
             this.groupBox2.Name = "groupBox2";
@@ -127,13 +131,13 @@ namespace HospitalManagementAutomation
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
-            // comboBox1
+            // cmbBrans
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(90, 62);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 30);
-            this.comboBox1.TabIndex = 2;
+            this.cmbBrans.FormattingEnabled = true;
+            this.cmbBrans.Location = new System.Drawing.Point(90, 62);
+            this.cmbBrans.Name = "cmbBrans";
+            this.cmbBrans.Size = new System.Drawing.Size(203, 30);
+            this.cmbBrans.TabIndex = 2;
             // 
             // label5
             // 
@@ -146,21 +150,21 @@ namespace HospitalManagementAutomation
             this.label5.TabIndex = 0;
             this.label5.Text = "Doktor:";
             // 
-            // comboBox2
+            // cmbDoktor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 101);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(203, 30);
-            this.comboBox2.TabIndex = 2;
+            this.cmbDoktor.FormattingEnabled = true;
+            this.cmbDoktor.Location = new System.Drawing.Point(90, 101);
+            this.cmbDoktor.Name = "cmbDoktor";
+            this.cmbDoktor.Size = new System.Drawing.Size(203, 30);
+            this.cmbDoktor.TabIndex = 2;
             // 
-            // richTextBox1
+            // rchSikayet
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(90, 153);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(203, 227);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.rchSikayet.Location = new System.Drawing.Point(90, 153);
+            this.rchSikayet.Name = "rchSikayet";
+            this.rchSikayet.Size = new System.Drawing.Size(203, 195);
+            this.rchSikayet.TabIndex = 2;
+            this.rchSikayet.Text = "";
             // 
             // label7
             // 
@@ -173,16 +177,16 @@ namespace HospitalManagementAutomation
             this.label7.TabIndex = 0;
             this.label7.Text = "Şikayet:";
             // 
-            // button1
+            // btnRandevuAl
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(90, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Randevu Al";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRandevuAl.BackColor = System.Drawing.Color.Yellow;
+            this.btnRandevuAl.ForeColor = System.Drawing.Color.Black;
+            this.btnRandevuAl.Location = new System.Drawing.Point(90, 365);
+            this.btnRandevuAl.Name = "btnRandevuAl";
+            this.btnRandevuAl.Size = new System.Drawing.Size(203, 40);
+            this.btnRandevuAl.TabIndex = 3;
+            this.btnRandevuAl.Text = "Randevu Al";
+            this.btnRandevuAl.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
@@ -226,6 +230,28 @@ namespace HospitalManagementAutomation
             this.dataGridView2.Size = new System.Drawing.Size(735, 279);
             this.dataGridView2.TabIndex = 0;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(17, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 24);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Ad Soyad:";
+            // 
+            // lnkBilgiDuzenle
+            // 
+            this.lnkBilgiDuzenle.AutoSize = true;
+            this.lnkBilgiDuzenle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lnkBilgiDuzenle.Location = new System.Drawing.Point(106, 418);
+            this.lnkBilgiDuzenle.Name = "lnkBilgiDuzenle";
+            this.lnkBilgiDuzenle.Size = new System.Drawing.Size(163, 24);
+            this.lnkBilgiDuzenle.TabIndex = 4;
+            this.lnkBilgiDuzenle.TabStop = true;
+            this.lnkBilgiDuzenle.Text = "Bilgilerini Düzenle";
+            // 
             // FormHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -256,20 +282,22 @@ namespace HospitalManagementAutomation
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTC;
+        private System.Windows.Forms.Label lblAdSoyad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbBrans;
+        private System.Windows.Forms.Button btnRandevuAl;
+        private System.Windows.Forms.RichTextBox rchSikayet;
+        private System.Windows.Forms.ComboBox cmbDoktor;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel lnkBilgiDuzenle;
     }
 }

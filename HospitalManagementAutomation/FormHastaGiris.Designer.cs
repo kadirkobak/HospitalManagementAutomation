@@ -33,8 +33,8 @@ namespace HospitalManagementAutomation
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LnkUyeOl = new System.Windows.Forms.LinkLabel();
-            this.hastaTC = new System.Windows.Forms.MaskedTextBox();
-            this.hastaSifre = new System.Windows.Forms.TextBox();
+            this.mskTCKimlikNo = new System.Windows.Forms.MaskedTextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.BtnGirisYap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@ namespace HospitalManagementAutomation
             this.label1.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(102, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 59);
+            this.label1.Size = new System.Drawing.Size(322, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hasta Giriş Paneli";
             // 
@@ -78,21 +78,21 @@ namespace HospitalManagementAutomation
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
             // 
-            // hastaTC
+            // mskTCKimlikNo
             // 
-            this.hastaTC.Location = new System.Drawing.Point(229, 98);
-            this.hastaTC.Mask = "00000000000";
-            this.hastaTC.Name = "hastaTC";
-            this.hastaTC.Size = new System.Drawing.Size(92, 32);
-            this.hastaTC.TabIndex = 4;
-            this.hastaTC.ValidatingType = typeof(int);
+            this.mskTCKimlikNo.Location = new System.Drawing.Point(229, 98);
+            this.mskTCKimlikNo.Mask = "00000000000";
+            this.mskTCKimlikNo.Name = "mskTCKimlikNo";
+            this.mskTCKimlikNo.Size = new System.Drawing.Size(92, 32);
+            this.mskTCKimlikNo.TabIndex = 4;
+            this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
-            // hastaSifre
+            // txtSifre
             // 
-            this.hastaSifre.Location = new System.Drawing.Point(229, 135);
-            this.hastaSifre.Name = "hastaSifre";
-            this.hastaSifre.Size = new System.Drawing.Size(92, 32);
-            this.hastaSifre.TabIndex = 5;
+            this.txtSifre.Location = new System.Drawing.Point(229, 135);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(92, 32);
+            this.txtSifre.TabIndex = 5;
             // 
             // BtnGirisYap
             // 
@@ -110,14 +110,14 @@ namespace HospitalManagementAutomation
             this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(554, 264);
             this.Controls.Add(this.BtnGirisYap);
-            this.Controls.Add(this.hastaSifre);
-            this.Controls.Add(this.hastaTC);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.mskTCKimlikNo);
             this.Controls.Add(this.LnkUyeOl);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormHastaGiris";
             this.Text = "FormHastaGiris";
             this.Load += new System.EventHandler(this.FormHastaGiris_Load);
@@ -132,8 +132,8 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel LnkUyeOl;
-        private System.Windows.Forms.MaskedTextBox hastaTC;
-        private System.Windows.Forms.TextBox hastaSifre;
+        private System.Windows.Forms.MaskedTextBox mskTCKimlikNo;
+        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Button BtnGirisYap;
     }
 }
