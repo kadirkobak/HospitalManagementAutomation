@@ -86,7 +86,7 @@ namespace HospitalManagementAutomation
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
             this.mskTCKimlikNo.Size = new System.Drawing.Size(132, 32);
-            this.mskTCKimlikNo.TabIndex = 4;
+            this.mskTCKimlikNo.TabIndex = 1;
             this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
             // txtSifre
@@ -94,19 +94,20 @@ namespace HospitalManagementAutomation
             this.txtSifre.Location = new System.Drawing.Point(229, 135);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(132, 32);
-            this.txtSifre.TabIndex = 5;
+            this.txtSifre.TabIndex = 2;
             // 
             // BtnGirisYap
             // 
             this.BtnGirisYap.Location = new System.Drawing.Point(229, 188);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(132, 33);
-            this.BtnGirisYap.TabIndex = 6;
+            this.BtnGirisYap.TabIndex = 4;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
             // 
             // FormHastaGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

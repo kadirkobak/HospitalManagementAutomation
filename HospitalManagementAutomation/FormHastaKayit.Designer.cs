@@ -29,6 +29,7 @@ namespace HospitalManagementAutomation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHastaKayit));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -116,14 +117,14 @@ namespace HospitalManagementAutomation
             this.txtSoyad.Location = new System.Drawing.Point(146, 74);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(164, 29);
-            this.txtSoyad.TabIndex = 1;
+            this.txtSoyad.TabIndex = 2;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(146, 170);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 29);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 5;
             // 
             // mskTCKimlikNo
             // 
@@ -131,7 +132,7 @@ namespace HospitalManagementAutomation
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
             this.mskTCKimlikNo.Size = new System.Drawing.Size(164, 29);
-            this.mskTCKimlikNo.TabIndex = 2;
+            this.mskTCKimlikNo.TabIndex = 3;
             this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
             // mskNumber
@@ -140,7 +141,7 @@ namespace HospitalManagementAutomation
             this.mskNumber.Mask = "(999) 000-0000";
             this.mskNumber.Name = "mskNumber";
             this.mskNumber.Size = new System.Drawing.Size(164, 29);
-            this.mskNumber.TabIndex = 2;
+            this.mskNumber.TabIndex = 4;
             // 
             // cmbCinsiyet
             // 
@@ -151,7 +152,7 @@ namespace HospitalManagementAutomation
             this.cmbCinsiyet.Location = new System.Drawing.Point(146, 203);
             this.cmbCinsiyet.Name = "cmbCinsiyet";
             this.cmbCinsiyet.Size = new System.Drawing.Size(164, 30);
-            this.cmbCinsiyet.TabIndex = 3;
+            this.cmbCinsiyet.TabIndex = 6;
             // 
             // btnKayitYap
             // 
@@ -160,14 +161,17 @@ namespace HospitalManagementAutomation
             this.btnKayitYap.Location = new System.Drawing.Point(146, 253);
             this.btnKayitYap.Name = "btnKayitYap";
             this.btnKayitYap.Size = new System.Drawing.Size(164, 43);
-            this.btnKayitYap.TabIndex = 4;
+            this.btnKayitYap.TabIndex = 7;
             this.btnKayitYap.Text = "Kayıt Yap";
             this.btnKayitYap.UseVisualStyleBackColor = false;
+            this.btnKayitYap.Click += new System.EventHandler(this.btnKayitYap_Click);
             // 
             // FormHastaKayit
             // 
+            this.AcceptButton = this.btnKayitYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(397, 331);
             this.Controls.Add(this.btnKayitYap);
@@ -184,9 +188,11 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FormHastaKayit";
-            this.Text = "FormHastaKayit";
+            this.Text = "Hasta Kayıt";
             this.ResumeLayout(false);
             this.PerformLayout();
 
