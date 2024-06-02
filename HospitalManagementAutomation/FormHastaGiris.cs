@@ -42,6 +42,7 @@ namespace HospitalManagementAutomation
             if (dr.Read())
             {
                 FormHastaDetay fr = new FormHastaDetay();
+                fr.tc = mskTCKimlikNo.Text;
                 fr.Show();
                 this.Hide();
             }
