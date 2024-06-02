@@ -134,7 +134,7 @@ namespace HospitalManagementAutomation
             // 
             this.btnBilgiGuncelle.BackColor = System.Drawing.Color.Yellow;
             this.btnBilgiGuncelle.ForeColor = System.Drawing.Color.Black;
-            this.btnBilgiGuncelle.Location = new System.Drawing.Point(169, 272);
+            this.btnBilgiGuncelle.Location = new System.Drawing.Point(170, 272);
             this.btnBilgiGuncelle.Name = "btnBilgiGuncelle";
             this.btnBilgiGuncelle.Size = new System.Drawing.Size(164, 43);
             this.btnBilgiGuncelle.TabIndex = 25;
