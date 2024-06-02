@@ -104,6 +104,7 @@ namespace HospitalManagementAutomation
             this.BtnGirisYap.TabIndex = 4;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // FormHastaGiris
             // 
