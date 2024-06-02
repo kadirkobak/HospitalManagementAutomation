@@ -32,35 +32,35 @@ namespace HospitalManagementAutomation
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rchDuyuru = new System.Windows.Forms.RichTextBox();
+            this.btnDuyuruOlustur = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDoktorPaneli = new System.Windows.Forms.Button();
+            this.btnBransPaneli = new System.Windows.Forms.Button();
+            this.btnRandevuListe = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.mskTarih = new System.Windows.Forms.MaskedTextBox();
+            this.mskSaat = new System.Windows.Forms.MaskedTextBox();
+            this.cmbBrans = new System.Windows.Forms.ComboBox();
+            this.cmbDoktor = new System.Windows.Forms.ComboBox();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.chkRandevuDurumu = new System.Windows.Forms.CheckBox();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,8 +73,8 @@ namespace HospitalManagementAutomation
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblAdSoyad);
+            this.groupBox1.Controls.Add(this.lblTC);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -102,28 +102,28 @@ namespace HospitalManagementAutomation
             this.label2.TabIndex = 0;
             this.label2.Text = "Ad Soyad:";
             // 
-            // label3
+            // lblTC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(125, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "00000000000";
+            this.lblTC.AutoSize = true;
+            this.lblTC.Location = new System.Drawing.Point(125, 58);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(120, 24);
+            this.lblTC.TabIndex = 0;
+            this.lblTC.Text = "00000000000";
             // 
-            // label4
+            // lblAdSoyad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(126, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 24);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Null Null";
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(126, 95);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(82, 24);
+            this.lblAdSoyad.TabIndex = 0;
+            this.lblAdSoyad.Text = "Null Null";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.btnDuyuruOlustur);
+            this.groupBox2.Controls.Add(this.rchDuyuru);
             this.groupBox2.Location = new System.Drawing.Point(12, 199);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 411);
@@ -131,34 +131,34 @@ namespace HospitalManagementAutomation
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Duyuru Oluştur";
             // 
-            // richTextBox1
+            // rchDuyuru
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 31);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(295, 322);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rchDuyuru.Location = new System.Drawing.Point(6, 31);
+            this.rchDuyuru.Name = "rchDuyuru";
+            this.rchDuyuru.Size = new System.Drawing.Size(295, 322);
+            this.rchDuyuru.TabIndex = 0;
+            this.rchDuyuru.Text = "";
             // 
-            // button1
+            // btnDuyuruOlustur
             // 
-            this.button1.Location = new System.Drawing.Point(6, 359);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(295, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Oluştur";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDuyuruOlustur.Location = new System.Drawing.Point(6, 359);
+            this.btnDuyuruOlustur.Name = "btnDuyuruOlustur";
+            this.btnDuyuruOlustur.Size = new System.Drawing.Size(295, 46);
+            this.btnDuyuruOlustur.TabIndex = 1;
+            this.btnDuyuruOlustur.Text = "Oluştur";
+            this.btnDuyuruOlustur.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Controls.Add(this.maskedTextBox3);
-            this.groupBox3.Controls.Add(this.comboBox2);
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.maskedTextBox2);
-            this.groupBox3.Controls.Add(this.maskedTextBox1);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.btnGuncelle);
+            this.groupBox3.Controls.Add(this.btnKaydet);
+            this.groupBox3.Controls.Add(this.chkRandevuDurumu);
+            this.groupBox3.Controls.Add(this.mskTC);
+            this.groupBox3.Controls.Add(this.cmbDoktor);
+            this.groupBox3.Controls.Add(this.cmbBrans);
+            this.groupBox3.Controls.Add(this.mskSaat);
+            this.groupBox3.Controls.Add(this.mskTarih);
+            this.groupBox3.Controls.Add(this.txtid);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label8);
@@ -174,9 +174,9 @@ namespace HospitalManagementAutomation
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.btnRandevuListe);
+            this.groupBox4.Controls.Add(this.btnBransPaneli);
+            this.groupBox4.Controls.Add(this.btnDoktorPaneli);
             this.groupBox4.Location = new System.Drawing.Point(12, 617);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(681, 112);
@@ -226,32 +226,32 @@ namespace HospitalManagementAutomation
             this.dataGridView2.Size = new System.Drawing.Size(442, 323);
             this.dataGridView2.TabIndex = 0;
             // 
-            // button2
+            // btnDoktorPaneli
             // 
-            this.button2.Location = new System.Drawing.Point(20, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 43);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Doktor Paneli";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDoktorPaneli.Location = new System.Drawing.Point(20, 41);
+            this.btnDoktorPaneli.Name = "btnDoktorPaneli";
+            this.btnDoktorPaneli.Size = new System.Drawing.Size(188, 43);
+            this.btnDoktorPaneli.TabIndex = 0;
+            this.btnDoktorPaneli.Text = "Doktor Paneli";
+            this.btnDoktorPaneli.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnBransPaneli
             // 
-            this.button3.Location = new System.Drawing.Point(240, 41);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 43);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Branş Paneli";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBransPaneli.Location = new System.Drawing.Point(240, 41);
+            this.btnBransPaneli.Name = "btnBransPaneli";
+            this.btnBransPaneli.Size = new System.Drawing.Size(188, 43);
+            this.btnBransPaneli.TabIndex = 0;
+            this.btnBransPaneli.Text = "Branş Paneli";
+            this.btnBransPaneli.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRandevuListe
             // 
-            this.button4.Location = new System.Drawing.Point(458, 41);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(188, 43);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Randevu Listesi";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRandevuListe.Location = new System.Drawing.Point(458, 41);
+            this.btnRandevuListe.Name = "btnRandevuListe";
+            this.btnRandevuListe.Size = new System.Drawing.Size(188, 43);
+            this.btnRandevuListe.TabIndex = 0;
+            this.btnRandevuListe.Text = "Randevu Listesi";
+            this.btnRandevuListe.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -262,12 +262,12 @@ namespace HospitalManagementAutomation
             this.label5.TabIndex = 0;
             this.label5.Text = "id:";
             // 
-            // textBox1
+            // txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 32);
-            this.textBox1.TabIndex = 1;
+            this.txtid.Location = new System.Drawing.Point(112, 91);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(176, 32);
+            this.txtid.TabIndex = 1;
             // 
             // label6
             // 
@@ -314,76 +314,76 @@ namespace HospitalManagementAutomation
             this.label10.TabIndex = 0;
             this.label10.Text = "TC:";
             // 
-            // maskedTextBox1
+            // mskTarih
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(112, 138);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(176, 32);
-            this.maskedTextBox1.TabIndex = 2;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.mskTarih.Location = new System.Drawing.Point(112, 138);
+            this.mskTarih.Mask = "00/00/0000";
+            this.mskTarih.Name = "mskTarih";
+            this.mskTarih.Size = new System.Drawing.Size(176, 32);
+            this.mskTarih.TabIndex = 2;
+            this.mskTarih.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // mskSaat
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(112, 182);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(176, 32);
-            this.maskedTextBox2.TabIndex = 2;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.mskSaat.Location = new System.Drawing.Point(112, 182);
+            this.mskSaat.Mask = "00:00";
+            this.mskSaat.Name = "mskSaat";
+            this.mskSaat.Size = new System.Drawing.Size(176, 32);
+            this.mskSaat.TabIndex = 2;
+            this.mskSaat.ValidatingType = typeof(System.DateTime);
             // 
-            // comboBox1
+            // cmbBrans
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 227);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(176, 32);
-            this.comboBox1.TabIndex = 3;
+            this.cmbBrans.FormattingEnabled = true;
+            this.cmbBrans.Location = new System.Drawing.Point(112, 227);
+            this.cmbBrans.Name = "cmbBrans";
+            this.cmbBrans.Size = new System.Drawing.Size(176, 32);
+            this.cmbBrans.TabIndex = 3;
             // 
-            // comboBox2
+            // cmbDoktor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(112, 273);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(176, 32);
-            this.comboBox2.TabIndex = 3;
+            this.cmbDoktor.FormattingEnabled = true;
+            this.cmbDoktor.Location = new System.Drawing.Point(112, 273);
+            this.cmbDoktor.Name = "cmbDoktor";
+            this.cmbDoktor.Size = new System.Drawing.Size(176, 32);
+            this.cmbDoktor.TabIndex = 3;
             // 
-            // maskedTextBox3
+            // mskTC
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(112, 322);
-            this.maskedTextBox3.Mask = "00000000000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(176, 32);
-            this.maskedTextBox3.TabIndex = 4;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.mskTC.Location = new System.Drawing.Point(112, 322);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(176, 32);
+            this.mskTC.TabIndex = 4;
+            this.mskTC.ValidatingType = typeof(int);
             // 
-            // checkBox1
+            // chkRandevuDurumu
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(112, 374);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(176, 28);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Randevu Durumu";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkRandevuDurumu.AutoSize = true;
+            this.chkRandevuDurumu.Location = new System.Drawing.Point(112, 374);
+            this.chkRandevuDurumu.Name = "chkRandevuDurumu";
+            this.chkRandevuDurumu.Size = new System.Drawing.Size(176, 28);
+            this.chkRandevuDurumu.TabIndex = 5;
+            this.chkRandevuDurumu.Text = "Randevu Durumu";
+            this.chkRandevuDurumu.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnKaydet
             // 
-            this.button5.Location = new System.Drawing.Point(112, 434);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 40);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Kaydet";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnKaydet.Location = new System.Drawing.Point(112, 434);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(176, 40);
+            this.btnKaydet.TabIndex = 6;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnGuncelle
             // 
-            this.button6.Location = new System.Drawing.Point(112, 489);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 40);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Güncelle";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Location = new System.Drawing.Point(112, 489);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(176, 40);
+            this.btnGuncelle.TabIndex = 6;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
             // FormSekreterDetay
             // 
@@ -420,21 +420,21 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblAdSoyad;
+        private System.Windows.Forms.Label lblTC;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnDuyuruOlustur;
+        private System.Windows.Forms.RichTextBox rchDuyuru;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.CheckBox chkRandevuDurumu;
+        private System.Windows.Forms.MaskedTextBox mskTC;
+        private System.Windows.Forms.ComboBox cmbDoktor;
+        private System.Windows.Forms.ComboBox cmbBrans;
+        private System.Windows.Forms.MaskedTextBox mskSaat;
+        private System.Windows.Forms.MaskedTextBox mskTarih;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -442,9 +442,9 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRandevuListe;
+        private System.Windows.Forms.Button btnBransPaneli;
+        private System.Windows.Forms.Button btnDoktorPaneli;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox6;
