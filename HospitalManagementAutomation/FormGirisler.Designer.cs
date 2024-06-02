@@ -135,6 +135,7 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.btnSekreterGirisi);
             this.Controls.Add(this.btnDoktorGirisi);
             this.Controls.Add(this.btnHastaGirisi);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormGirisler";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
