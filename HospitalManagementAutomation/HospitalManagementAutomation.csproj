@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlconn.cs" />
     <EmbeddedResource Include="FormBilgiDuzenle.resx">
       <DependentUpon>FormBilgiDuzenle.cs</DependentUpon>
     </EmbeddedResource>
