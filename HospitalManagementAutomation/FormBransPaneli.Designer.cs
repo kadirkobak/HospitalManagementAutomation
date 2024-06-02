@@ -35,7 +35,7 @@ namespace HospitalManagementAutomation
             this.btnEkle = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBransAd = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtBransid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -98,12 +98,12 @@ namespace HospitalManagementAutomation
             this.label1.TabIndex = 16;
             this.label1.Text = "Branş id:";
             // 
-            // txtBransAd
+            // txtSoyad
             // 
-            this.txtBransAd.Location = new System.Drawing.Point(107, 88);
-            this.txtBransAd.Name = "txtBransAd";
-            this.txtBransAd.Size = new System.Drawing.Size(176, 32);
-            this.txtBransAd.TabIndex = 9;
+            this.txtSoyad.Location = new System.Drawing.Point(107, 88);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(176, 32);
+            this.txtSoyad.TabIndex = 9;
             // 
             // txtBransid
             // 
@@ -124,7 +124,7 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtBransAd);
+            this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtBransid);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -144,7 +144,7 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBransAd;
+        private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtBransid;
     }
 }
