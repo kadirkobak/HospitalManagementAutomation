@@ -71,7 +71,7 @@ namespace HospitalManagementAutomation
             // LnkUyeOl
             // 
             this.LnkUyeOl.AutoSize = true;
-            this.LnkUyeOl.Location = new System.Drawing.Point(342, 143);
+            this.LnkUyeOl.Location = new System.Drawing.Point(379, 138);
             this.LnkUyeOl.Name = "LnkUyeOl";
             this.LnkUyeOl.Size = new System.Drawing.Size(66, 24);
             this.LnkUyeOl.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace HospitalManagementAutomation
             this.mskTCKimlikNo.Location = new System.Drawing.Point(229, 98);
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
-            this.mskTCKimlikNo.Size = new System.Drawing.Size(92, 32);
+            this.mskTCKimlikNo.Size = new System.Drawing.Size(132, 32);
             this.mskTCKimlikNo.TabIndex = 4;
             this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
@@ -91,14 +91,14 @@ namespace HospitalManagementAutomation
             // 
             this.txtSifre.Location = new System.Drawing.Point(229, 135);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(92, 32);
+            this.txtSifre.Size = new System.Drawing.Size(132, 32);
             this.txtSifre.TabIndex = 5;
             // 
             // BtnGirisYap
             // 
             this.BtnGirisYap.Location = new System.Drawing.Point(229, 188);
             this.BtnGirisYap.Name = "BtnGirisYap";
-            this.BtnGirisYap.Size = new System.Drawing.Size(92, 33);
+            this.BtnGirisYap.Size = new System.Drawing.Size(132, 33);
             this.BtnGirisYap.TabIndex = 6;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
