@@ -30,19 +30,19 @@ namespace HospitalManagementAutomation
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTC = new System.Windows.Forms.Label();
-            this.lblAdSoyad = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnBilgiDuzenle = new System.Windows.Forms.Button();
-            this.btnDuyurular = new System.Windows.Forms.Button();
-            this.btnNet = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnNet = new System.Windows.Forms.Button();
+            this.btnDuyurular = new System.Windows.Forms.Button();
+            this.btnBilgiDuzenle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,14 +63,14 @@ namespace HospitalManagementAutomation
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doktor Bilgileri";
             // 
-            // label1
+            // lblAdSoyad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TC No:";
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(127, 83);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(82, 24);
+            this.lblAdSoyad.TabIndex = 0;
+            this.lblAdSoyad.Text = "Null Null";
             // 
             // label2
             // 
@@ -90,14 +90,14 @@ namespace HospitalManagementAutomation
             this.lblTC.TabIndex = 0;
             this.lblTC.Text = "00000000000";
             // 
-            // lblAdSoyad
+            // label1
             // 
-            this.lblAdSoyad.AutoSize = true;
-            this.lblAdSoyad.Location = new System.Drawing.Point(127, 83);
-            this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(82, 24);
-            this.lblAdSoyad.TabIndex = 0;
-            this.lblAdSoyad.Text = "Null Null";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(54, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TC No:";
             // 
             // groupBox2
             // 
@@ -108,6 +108,14 @@ namespace HospitalManagementAutomation
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Detay";
+            // 
+            // rchSikayet
+            // 
+            this.rchSikayet.Location = new System.Drawing.Point(6, 31);
+            this.rchSikayet.Name = "rchSikayet";
+            this.rchSikayet.Size = new System.Drawing.Size(300, 315);
+            this.rchSikayet.TabIndex = 0;
+            this.rchSikayet.Text = "";
             // 
             // groupBox3
             // 
@@ -130,14 +138,6 @@ namespace HospitalManagementAutomation
             this.dataGridView1.Size = new System.Drawing.Size(817, 675);
             this.dataGridView1.TabIndex = 0;
             // 
-            // rchSikayet
-            // 
-            this.rchSikayet.Location = new System.Drawing.Point(6, 31);
-            this.rchSikayet.Name = "rchSikayet";
-            this.rchSikayet.Size = new System.Drawing.Size(300, 315);
-            this.rchSikayet.TabIndex = 0;
-            this.rchSikayet.Text = "";
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnCikis);
@@ -151,23 +151,14 @@ namespace HospitalManagementAutomation
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hızlı Erişim";
             // 
-            // btnBilgiDuzenle
+            // btnCikis
             // 
-            this.btnBilgiDuzenle.Location = new System.Drawing.Point(6, 40);
-            this.btnBilgiDuzenle.Name = "btnBilgiDuzenle";
-            this.btnBilgiDuzenle.Size = new System.Drawing.Size(129, 59);
-            this.btnBilgiDuzenle.TabIndex = 0;
-            this.btnBilgiDuzenle.Text = "Bilgileri Düzenle";
-            this.btnBilgiDuzenle.UseVisualStyleBackColor = true;
-            // 
-            // btnDuyurular
-            // 
-            this.btnDuyurular.Location = new System.Drawing.Point(151, 40);
-            this.btnDuyurular.Name = "btnDuyurular";
-            this.btnDuyurular.Size = new System.Drawing.Size(129, 59);
-            this.btnDuyurular.TabIndex = 0;
-            this.btnDuyurular.Text = "Duyurular";
-            this.btnDuyurular.UseVisualStyleBackColor = true;
+            this.btnCikis.Location = new System.Drawing.Point(151, 100);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(129, 59);
+            this.btnCikis.TabIndex = 0;
+            this.btnCikis.Text = "Çıkış Yap";
+            this.btnCikis.UseVisualStyleBackColor = true;
             // 
             // btnNet
             // 
@@ -178,14 +169,23 @@ namespace HospitalManagementAutomation
             this.btnNet.Text = "İnternet";
             this.btnNet.UseVisualStyleBackColor = true;
             // 
-            // btnCikis
+            // btnDuyurular
             // 
-            this.btnCikis.Location = new System.Drawing.Point(151, 100);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(129, 59);
-            this.btnCikis.TabIndex = 0;
-            this.btnCikis.Text = "Çıkış";
-            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnDuyurular.Location = new System.Drawing.Point(151, 40);
+            this.btnDuyurular.Name = "btnDuyurular";
+            this.btnDuyurular.Size = new System.Drawing.Size(129, 59);
+            this.btnDuyurular.TabIndex = 0;
+            this.btnDuyurular.Text = "Duyurular";
+            this.btnDuyurular.UseVisualStyleBackColor = true;
+            // 
+            // btnBilgiDuzenle
+            // 
+            this.btnBilgiDuzenle.Location = new System.Drawing.Point(6, 40);
+            this.btnBilgiDuzenle.Name = "btnBilgiDuzenle";
+            this.btnBilgiDuzenle.Size = new System.Drawing.Size(129, 59);
+            this.btnBilgiDuzenle.TabIndex = 0;
+            this.btnBilgiDuzenle.Text = "Bilgileri Düzenle";
+            this.btnBilgiDuzenle.UseVisualStyleBackColor = true;
             // 
             // FormDoktorDetay
             // 
@@ -198,7 +198,7 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDoktorDetay";
             this.Text = "FormDoktorDetay";
             this.groupBox1.ResumeLayout(false);
