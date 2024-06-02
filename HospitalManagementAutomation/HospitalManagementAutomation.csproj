@@ -70,6 +70,12 @@
     <Compile Include="FormDoktorGiris.Designer.cs">
       <DependentUpon>FormDoktorGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuyurular.Designer.cs">
+      <DependentUpon>FormDuyurular.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDoktorGiris.resx">
       <DependentUpon>FormDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDuyurular.resx">
+      <DependentUpon>FormDuyurular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGirisler.resx">
       <DependentUpon>FormGirisler.cs</DependentUpon>

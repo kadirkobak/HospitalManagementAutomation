@@ -44,7 +44,7 @@ namespace HospitalManagementAutomation
             // 
             // mskTCKimlikNo
             // 
-            this.mskTCKimlikNo.Location = new System.Drawing.Point(149, 173);
+            this.mskTCKimlikNo.Location = new System.Drawing.Point(170, 144);
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
             this.mskTCKimlikNo.Size = new System.Drawing.Size(164, 32);
@@ -53,21 +53,21 @@ namespace HospitalManagementAutomation
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(149, 252);
+            this.txtPassword.Location = new System.Drawing.Point(170, 223);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 32);
             this.txtPassword.TabIndex = 20;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(149, 136);
+            this.txtSoyad.Location = new System.Drawing.Point(170, 107);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(164, 32);
             this.txtSoyad.TabIndex = 21;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(149, 99);
+            this.txtAd.Location = new System.Drawing.Point(170, 70);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(164, 32);
             this.txtAd.TabIndex = 22;
@@ -76,7 +76,7 @@ namespace HospitalManagementAutomation
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(90, 252);
+            this.label5.Location = new System.Drawing.Point(111, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 24);
             this.label5.TabIndex = 16;
@@ -86,7 +86,7 @@ namespace HospitalManagementAutomation
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(19, 175);
+            this.label3.Location = new System.Drawing.Point(40, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 24);
             this.label3.TabIndex = 17;
@@ -96,7 +96,7 @@ namespace HospitalManagementAutomation
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(76, 137);
+            this.label2.Location = new System.Drawing.Point(97, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 24);
             this.label2.TabIndex = 18;
@@ -106,7 +106,7 @@ namespace HospitalManagementAutomation
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(105, 104);
+            this.label1.Location = new System.Drawing.Point(126, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 24);
             this.label1.TabIndex = 19;
@@ -115,7 +115,7 @@ namespace HospitalManagementAutomation
             // cmbBrans
             // 
             this.cmbBrans.FormattingEnabled = true;
-            this.cmbBrans.Location = new System.Drawing.Point(149, 212);
+            this.cmbBrans.Location = new System.Drawing.Point(170, 183);
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(164, 32);
             this.cmbBrans.TabIndex = 24;
@@ -124,7 +124,7 @@ namespace HospitalManagementAutomation
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(18, 217);
+            this.label4.Location = new System.Drawing.Point(39, 188);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 24);
             this.label4.TabIndex = 17;
@@ -134,7 +134,7 @@ namespace HospitalManagementAutomation
             // 
             this.btnBilgiGuncelle.BackColor = System.Drawing.Color.Yellow;
             this.btnBilgiGuncelle.ForeColor = System.Drawing.Color.Black;
-            this.btnBilgiGuncelle.Location = new System.Drawing.Point(149, 301);
+            this.btnBilgiGuncelle.Location = new System.Drawing.Point(170, 272);
             this.btnBilgiGuncelle.Name = "btnBilgiGuncelle";
             this.btnBilgiGuncelle.Size = new System.Drawing.Size(164, 43);
             this.btnBilgiGuncelle.TabIndex = 25;
@@ -146,7 +146,7 @@ namespace HospitalManagementAutomation
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(365, 408);
+            this.ClientSize = new System.Drawing.Size(406, 371);
             this.Controls.Add(this.btnBilgiGuncelle);
             this.Controls.Add(this.cmbBrans);
             this.Controls.Add(this.mskTCKimlikNo);

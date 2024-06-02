@@ -40,7 +40,6 @@ namespace HospitalManagementAutomation
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnCikis = new System.Windows.Forms.Button();
-            this.btnNet = new System.Windows.Forms.Button();
             this.btnDuyurular = new System.Windows.Forms.Button();
             this.btnBilgiDuzenle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -141,7 +140,6 @@ namespace HospitalManagementAutomation
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnCikis);
-            this.groupBox4.Controls.Add(this.btnNet);
             this.groupBox4.Controls.Add(this.btnDuyurular);
             this.groupBox4.Controls.Add(this.btnBilgiDuzenle);
             this.groupBox4.Location = new System.Drawing.Point(18, 553);
@@ -153,21 +151,12 @@ namespace HospitalManagementAutomation
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(151, 100);
+            this.btnCikis.Location = new System.Drawing.Point(6, 105);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(129, 59);
+            this.btnCikis.Size = new System.Drawing.Size(274, 54);
             this.btnCikis.TabIndex = 0;
             this.btnCikis.Text = "Çıkış Yap";
             this.btnCikis.UseVisualStyleBackColor = true;
-            // 
-            // btnNet
-            // 
-            this.btnNet.Location = new System.Drawing.Point(6, 100);
-            this.btnNet.Name = "btnNet";
-            this.btnNet.Size = new System.Drawing.Size(129, 59);
-            this.btnNet.TabIndex = 0;
-            this.btnNet.Text = "İnternet";
-            this.btnNet.UseVisualStyleBackColor = true;
             // 
             // btnDuyurular
             // 
@@ -224,7 +213,6 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnCikis;
-        private System.Windows.Forms.Button btnNet;
         private System.Windows.Forms.Button btnDuyurular;
         private System.Windows.Forms.Button btnBilgiDuzenle;
     }
