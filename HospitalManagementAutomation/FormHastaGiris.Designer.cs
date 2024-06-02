@@ -29,6 +29,7 @@ namespace HospitalManagementAutomation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHastaGiris));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -77,6 +78,7 @@ namespace HospitalManagementAutomation
             this.LnkUyeOl.TabIndex = 3;
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
+            this.LnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkUyeOl_LinkClicked);
             // 
             // mskTCKimlikNo
             // 
@@ -107,6 +109,7 @@ namespace HospitalManagementAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(554, 264);
             this.Controls.Add(this.BtnGirisYap);
@@ -117,9 +120,11 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FormHastaGiris";
-            this.Text = "FormHastaGiris";
+            this.Text = "Hasta Girişi";
             this.Load += new System.EventHandler(this.FormHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -21,5 +21,11 @@ namespace HospitalManagementAutomation
         {
 
         }
+
+        private void LnkUyeOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormHastaKayit fr = new FormHastaKayit();
+            fr.Show();
+        }
     }
 }

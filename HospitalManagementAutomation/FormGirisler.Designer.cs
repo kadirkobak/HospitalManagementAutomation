@@ -50,6 +50,7 @@ namespace HospitalManagementAutomation
             this.btnHastaGirisi.Size = new System.Drawing.Size(235, 168);
             this.btnHastaGirisi.TabIndex = 0;
             this.btnHastaGirisi.UseVisualStyleBackColor = true;
+            this.btnHastaGirisi.Click += new System.EventHandler(this.btnHastaGirisi_Click);
             // 
             // btnDoktorGirisi
             // 
@@ -60,6 +61,7 @@ namespace HospitalManagementAutomation
             this.btnDoktorGirisi.Size = new System.Drawing.Size(235, 168);
             this.btnDoktorGirisi.TabIndex = 1;
             this.btnDoktorGirisi.UseVisualStyleBackColor = true;
+            this.btnDoktorGirisi.Click += new System.EventHandler(this.btnDoktorGirisi_Click);
             // 
             // btnSekreterGirisi
             // 
@@ -70,6 +72,7 @@ namespace HospitalManagementAutomation
             this.btnSekreterGirisi.Size = new System.Drawing.Size(235, 168);
             this.btnSekreterGirisi.TabIndex = 2;
             this.btnSekreterGirisi.UseVisualStyleBackColor = true;
+            this.btnSekreterGirisi.Click += new System.EventHandler(this.btnSekreterGirisi_Click);
             // 
             // label1
             // 
@@ -125,6 +128,7 @@ namespace HospitalManagementAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(797, 393);
             this.Controls.Add(this.label4);
@@ -136,8 +140,9 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.btnDoktorGirisi);
             this.Controls.Add(this.btnHastaGirisi);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormGirisler";
-            this.Text = "Form1";
+            this.Text = "Light Green Hospital";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
