@@ -52,6 +52,7 @@ namespace HospitalManagementAutomation
             }
 
             bgl.baglanti().Close();
+            //
         }
     }
 }
