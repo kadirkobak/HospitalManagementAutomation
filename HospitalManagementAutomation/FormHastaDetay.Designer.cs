@@ -210,6 +210,7 @@ namespace HospitalManagementAutomation
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(203, 30);
             this.cmbBrans.TabIndex = 2;
+            this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
             // 
             // groupBox3
             // 
