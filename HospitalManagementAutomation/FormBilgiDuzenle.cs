@@ -45,8 +45,19 @@ namespace HospitalManagementAutomation
         private void btnBilgiGuncelle_Click(object sender, EventArgs e)
         {
             SqlCommand komut2 = new SqlCommand("UPDATE Tbl_Hastalar SET HastaAd=@p1,HastaSoyad=@p2,HastaTelefon=@p3,HastaSifre=@p4,HastaCinsiyet=@p5 WHERE HastaTC=@p6",bgl.baglanti());
-            
-            //komut2.Parameters.AddWithValue("")
+
+            komut2.Parameters.AddWithValue("@p1", txtAd.Text);
+            komut2.Parameters.AddWithValue("@p2", txtSoyad.Text);
+            komut2.Parameters.AddWithValue("@p3", mskNumber.Text);
+            komut2.Parameters.AddWithValue("@p4", txtPassword.Text);
+            komut2.Parameters.AddWithValue("@p5", cmbCinsiyet.Text);
+            komut2.Parameters.AddWithValue("@p6", mskTCKimlikNo.Text);
+            komut2.ExecuteNonQuery();
+
+            bgl.baglanti().Close();
+
+            MessageBox.Show("Bilgileriniz Güncellendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
         }
     }
 }
