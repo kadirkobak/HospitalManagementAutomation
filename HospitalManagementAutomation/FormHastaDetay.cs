@@ -78,6 +78,18 @@ namespace HospitalManagementAutomation
         private void cmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Tbl_Randevular WHERE RandevuBrans='"+cmbBrans.Text+"'",bgl.baglanti());
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+
+        }
+
+        private void lnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormBilgiDuzenle fr = new FormBilgiDuzenle();
+            fr.tcNo = lblTC.Text;
+            fr.Show();
         }
     }
 }

@@ -16,5 +16,12 @@ namespace HospitalManagementAutomation
         {
             InitializeComponent();
         }
+
+        public string tcNo;
+        
+        private void FormBilgiDuzenle_Load(object sender, EventArgs e)
+        {
+            mskTCKimlikNo.Text = tcNo;
+        }
     }
 }

@@ -37,6 +37,7 @@ namespace HospitalManagementAutomation
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.lnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.rchSikayet = new System.Windows.Forms.RichTextBox();
@@ -44,12 +45,11 @@ namespace HospitalManagementAutomation
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbBrans = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,6 +147,13 @@ namespace HospitalManagementAutomation
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(90, 40);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(203, 29);
+            this.txtid.TabIndex = 5;
+            // 
             // lnkBilgiDuzenle
             // 
             this.lnkBilgiDuzenle.AutoSize = true;
@@ -157,6 +164,7 @@ namespace HospitalManagementAutomation
             this.lnkBilgiDuzenle.TabIndex = 4;
             this.lnkBilgiDuzenle.TabStop = true;
             this.lnkBilgiDuzenle.Text = "Bilgilerini Düzenle";
+            this.lnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkBilgiDuzenle_LinkClicked);
             // 
             // btnRandevuAl
             // 
@@ -217,6 +225,17 @@ namespace HospitalManagementAutomation
             this.cmbBrans.TabIndex = 2;
             this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(53, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "id:";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
@@ -258,24 +277,6 @@ namespace HospitalManagementAutomation
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(735, 279);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(53, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "id:";
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(90, 40);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(203, 29);
-            this.txtid.TabIndex = 5;
             // 
             // FormHastaDetay
             // 

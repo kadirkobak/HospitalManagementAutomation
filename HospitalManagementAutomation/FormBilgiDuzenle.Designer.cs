@@ -29,6 +29,7 @@ namespace HospitalManagementAutomation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBilgiDuzenle));
             this.btnBilgiGuncelle = new System.Windows.Forms.Button();
             this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.mskNumber = new System.Windows.Forms.MaskedTextBox();
@@ -51,7 +52,7 @@ namespace HospitalManagementAutomation
             this.btnBilgiGuncelle.Location = new System.Drawing.Point(158, 287);
             this.btnBilgiGuncelle.Name = "btnBilgiGuncelle";
             this.btnBilgiGuncelle.Size = new System.Drawing.Size(164, 43);
-            this.btnBilgiGuncelle.TabIndex = 17;
+            this.btnBilgiGuncelle.TabIndex = 7;
             this.btnBilgiGuncelle.Text = "Güncelle";
             this.btnBilgiGuncelle.UseVisualStyleBackColor = false;
             // 
@@ -64,7 +65,7 @@ namespace HospitalManagementAutomation
             this.cmbCinsiyet.Location = new System.Drawing.Point(158, 237);
             this.cmbCinsiyet.Name = "cmbCinsiyet";
             this.cmbCinsiyet.Size = new System.Drawing.Size(164, 30);
-            this.cmbCinsiyet.TabIndex = 16;
+            this.cmbCinsiyet.TabIndex = 6;
             // 
             // mskNumber
             // 
@@ -72,7 +73,7 @@ namespace HospitalManagementAutomation
             this.mskNumber.Mask = "(999) 000-0000";
             this.mskNumber.Name = "mskNumber";
             this.mskNumber.Size = new System.Drawing.Size(164, 29);
-            this.mskNumber.TabIndex = 14;
+            this.mskNumber.TabIndex = 4;
             // 
             // mskTCKimlikNo
             // 
@@ -80,7 +81,7 @@ namespace HospitalManagementAutomation
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
             this.mskTCKimlikNo.Size = new System.Drawing.Size(164, 29);
-            this.mskTCKimlikNo.TabIndex = 15;
+            this.mskTCKimlikNo.TabIndex = 3;
             this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
             // txtPassword
@@ -88,21 +89,21 @@ namespace HospitalManagementAutomation
             this.txtPassword.Location = new System.Drawing.Point(158, 204);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 29);
-            this.txtPassword.TabIndex = 11;
+            this.txtPassword.TabIndex = 5;
             // 
             // txtSoyad
             // 
             this.txtSoyad.Location = new System.Drawing.Point(158, 108);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(164, 29);
-            this.txtSoyad.TabIndex = 12;
+            this.txtSoyad.TabIndex = 2;
             // 
             // txtAd
             // 
             this.txtAd.Location = new System.Drawing.Point(158, 77);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(164, 29);
-            this.txtAd.TabIndex = 13;
+            this.txtAd.TabIndex = 1;
             // 
             // label6
             // 
@@ -166,6 +167,7 @@ namespace HospitalManagementAutomation
             // 
             // FormBilgiDuzenle
             // 
+            this.AcceptButton = this.btnBilgiGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
@@ -184,9 +186,11 @@ namespace HospitalManagementAutomation
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormBilgiDuzenle";
             this.Text = "FormBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FormBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
