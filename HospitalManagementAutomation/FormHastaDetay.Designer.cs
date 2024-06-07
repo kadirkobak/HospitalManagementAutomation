@@ -48,6 +48,8 @@ namespace HospitalManagementAutomation
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -120,7 +122,7 @@ namespace HospitalManagementAutomation
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(21, 66);
+            this.label3.Location = new System.Drawing.Point(21, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 24);
             this.label3.TabIndex = 0;
@@ -128,6 +130,7 @@ namespace HospitalManagementAutomation
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtid);
             this.groupBox2.Controls.Add(this.lnkBilgiDuzenle);
             this.groupBox2.Controls.Add(this.btnRandevuAl);
             this.groupBox2.Controls.Add(this.rchSikayet);
@@ -135,6 +138,7 @@ namespace HospitalManagementAutomation
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cmbBrans);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(15, 217);
             this.groupBox2.Name = "groupBox2";
@@ -147,7 +151,7 @@ namespace HospitalManagementAutomation
             // 
             this.lnkBilgiDuzenle.AutoSize = true;
             this.lnkBilgiDuzenle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnkBilgiDuzenle.Location = new System.Drawing.Point(106, 418);
+            this.lnkBilgiDuzenle.Location = new System.Drawing.Point(106, 425);
             this.lnkBilgiDuzenle.Name = "lnkBilgiDuzenle";
             this.lnkBilgiDuzenle.Size = new System.Drawing.Size(163, 24);
             this.lnkBilgiDuzenle.TabIndex = 4;
@@ -158,7 +162,7 @@ namespace HospitalManagementAutomation
             // 
             this.btnRandevuAl.BackColor = System.Drawing.Color.Yellow;
             this.btnRandevuAl.ForeColor = System.Drawing.Color.Black;
-            this.btnRandevuAl.Location = new System.Drawing.Point(90, 365);
+            this.btnRandevuAl.Location = new System.Drawing.Point(90, 372);
             this.btnRandevuAl.Name = "btnRandevuAl";
             this.btnRandevuAl.Size = new System.Drawing.Size(203, 40);
             this.btnRandevuAl.TabIndex = 3;
@@ -167,7 +171,7 @@ namespace HospitalManagementAutomation
             // 
             // rchSikayet
             // 
-            this.rchSikayet.Location = new System.Drawing.Point(90, 153);
+            this.rchSikayet.Location = new System.Drawing.Point(90, 160);
             this.rchSikayet.Name = "rchSikayet";
             this.rchSikayet.Size = new System.Drawing.Size(203, 195);
             this.rchSikayet.TabIndex = 2;
@@ -176,17 +180,18 @@ namespace HospitalManagementAutomation
             // cmbDoktor
             // 
             this.cmbDoktor.FormattingEnabled = true;
-            this.cmbDoktor.Location = new System.Drawing.Point(90, 101);
+            this.cmbDoktor.Location = new System.Drawing.Point(90, 115);
             this.cmbDoktor.Name = "cmbDoktor";
             this.cmbDoktor.Size = new System.Drawing.Size(203, 30);
             this.cmbDoktor.TabIndex = 2;
+            this.cmbDoktor.SelectedIndexChanged += new System.EventHandler(this.cmbDoktor_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(6, 154);
+            this.label7.Location = new System.Drawing.Point(6, 161);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 24);
             this.label7.TabIndex = 0;
@@ -197,7 +202,7 @@ namespace HospitalManagementAutomation
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 103);
+            this.label5.Location = new System.Drawing.Point(10, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 24);
             this.label5.TabIndex = 0;
@@ -206,7 +211,7 @@ namespace HospitalManagementAutomation
             // cmbBrans
             // 
             this.cmbBrans.FormattingEnabled = true;
-            this.cmbBrans.Location = new System.Drawing.Point(90, 62);
+            this.cmbBrans.Location = new System.Drawing.Point(90, 76);
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(203, 30);
             this.cmbBrans.TabIndex = 2;
@@ -253,6 +258,24 @@ namespace HospitalManagementAutomation
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(735, 279);
             this.dataGridView2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(53, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "id:";
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(90, 40);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(203, 29);
+            this.txtid.TabIndex = 5;
             // 
             // FormHastaDetay
             // 
@@ -304,5 +327,7 @@ namespace HospitalManagementAutomation
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel lnkBilgiDuzenle;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.Label label2;
     }
 }

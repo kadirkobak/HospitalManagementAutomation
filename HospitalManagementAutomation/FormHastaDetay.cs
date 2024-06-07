@@ -60,6 +60,7 @@ namespace HospitalManagementAutomation
         {
 
             cmbDoktor.Items.Clear();
+            cmbDoktor.Text="";
 
             SqlCommand komut3 = new SqlCommand("SELECT DoktorAd,DoktorSoyad FROM Tbl_Doktorlar WHERE DoktorBrans=@p1", bgl.baglanti());
             komut3.Parameters.AddWithValue("@p1", cmbBrans.Text);
@@ -71,6 +72,11 @@ namespace HospitalManagementAutomation
             }
 
             bgl.baglanti().Close();
+
+        }
+
+        private void cmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
