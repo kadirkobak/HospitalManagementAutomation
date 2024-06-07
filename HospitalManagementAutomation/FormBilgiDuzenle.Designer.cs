@@ -55,6 +55,7 @@ namespace HospitalManagementAutomation
             this.btnBilgiGuncelle.TabIndex = 7;
             this.btnBilgiGuncelle.Text = "Güncelle";
             this.btnBilgiGuncelle.UseVisualStyleBackColor = false;
+            this.btnBilgiGuncelle.Click += new System.EventHandler(this.btnBilgiGuncelle_Click);
             // 
             // cmbCinsiyet
             // 
