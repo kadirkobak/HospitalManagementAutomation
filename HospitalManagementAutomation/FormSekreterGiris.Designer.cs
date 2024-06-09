@@ -44,7 +44,7 @@ namespace HospitalManagementAutomation
             this.BtnGirisYap.Location = new System.Drawing.Point(262, 190);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(132, 33);
-            this.BtnGirisYap.TabIndex = 12;
+            this.BtnGirisYap.TabIndex = 3;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = false;
             this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
@@ -54,7 +54,7 @@ namespace HospitalManagementAutomation
             this.txtSifre.Location = new System.Drawing.Point(262, 137);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(132, 32);
-            this.txtSifre.TabIndex = 11;
+            this.txtSifre.TabIndex = 2;
             this.txtSifre.UseSystemPasswordChar = true;
             // 
             // mskTCKimlikNo
@@ -63,7 +63,7 @@ namespace HospitalManagementAutomation
             this.mskTCKimlikNo.Mask = "00000000000";
             this.mskTCKimlikNo.Name = "mskTCKimlikNo";
             this.mskTCKimlikNo.Size = new System.Drawing.Size(132, 32);
-            this.mskTCKimlikNo.TabIndex = 10;
+            this.mskTCKimlikNo.TabIndex = 1;
             this.mskTCKimlikNo.ValidatingType = typeof(int);
             // 
             // label3
@@ -98,6 +98,7 @@ namespace HospitalManagementAutomation
             // 
             // FormSekreterGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
