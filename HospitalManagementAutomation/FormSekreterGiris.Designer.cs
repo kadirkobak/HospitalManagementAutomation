@@ -40,12 +40,14 @@ namespace HospitalManagementAutomation
             // 
             // BtnGirisYap
             // 
+            this.BtnGirisYap.BackColor = System.Drawing.Color.Yellow;
             this.BtnGirisYap.Location = new System.Drawing.Point(262, 190);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(132, 33);
             this.BtnGirisYap.TabIndex = 12;
             this.BtnGirisYap.Text = "Giriş Yap";
-            this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.UseVisualStyleBackColor = false;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // txtSifre
             // 
@@ -53,6 +55,7 @@ namespace HospitalManagementAutomation
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(132, 32);
             this.txtSifre.TabIndex = 11;
+            this.txtSifre.UseSystemPasswordChar = true;
             // 
             // mskTCKimlikNo
             // 
