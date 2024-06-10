@@ -189,6 +189,7 @@ namespace HospitalManagementAutomation
             this.btnKaydet.TabIndex = 6;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // chkRandevuDurumu
             // 
@@ -224,6 +225,7 @@ namespace HospitalManagementAutomation
             this.cmbBrans.Name = "cmbBrans";
             this.cmbBrans.Size = new System.Drawing.Size(176, 32);
             this.cmbBrans.TabIndex = 3;
+            this.cmbBrans.SelectedIndexChanged += new System.EventHandler(this.cmbBrans_SelectedIndexChanged);
             // 
             // mskSaat
             // 

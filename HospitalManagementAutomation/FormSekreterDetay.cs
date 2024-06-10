@@ -47,6 +47,46 @@ namespace HospitalManagementAutomation
             SqlDataAdapter da2 = new SqlDataAdapter("SELECT (DoktorAd+' '+DoktorSoyad) as 'Doktorlar',DoktorBrans FROM Tbl_Doktorlar", bgl.baglanti());
             da2.Fill(dt2);
             dataGridView2.DataSource = dt2;
+
+            //combobox'a branş aktarma işlemi
+            SqlCommand komut2 = new SqlCommand("SELECT BransAd FROM Tbl_Branslar",bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+
+            while (dr2.Read())
+            {
+                cmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutKaydet = new SqlCommand("INSERT INTO Tbl_Randevular (RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor) values (@r1,@r2,@r3,@r4)",bgl.baglanti());
+            komutKaydet.Parameters.AddWithValue("@r1", mskTarih.Text);
+            komutKaydet.Parameters.AddWithValue("@r2", mskSaat.Text);
+            komutKaydet.Parameters.AddWithValue("@r3", cmbBrans.Text);
+            komutKaydet.Parameters.AddWithValue("@r4", cmbDoktor.Text);
+            komutKaydet.ExecuteNonQuery();
+
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Oluşturuldu");
+        }
+
+        private void cmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbDoktor.Items.Clear();
+            cmbDoktor.Text="";
+
+            SqlCommand komut = new SqlCommand("SELECT DoktorAd,DoktorSoyad FROM Tbl_Doktorlar WHERE DoktorBrans=@p1",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", cmbBrans.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cmbDoktor.Items.Add(dr[0]+" "+dr[1]);
+            }
+            bgl.baglanti().Close();
+        
         }
     }
 }
